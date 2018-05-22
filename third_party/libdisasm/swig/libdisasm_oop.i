@@ -1092,7 +1092,7 @@ enum x86_asm_format {
 	int max_num_operands( ) { return MAX_NUM_OPERANDS; }
 }
 
-/* python callback, per the manual */
+/* python2 callback, per the manual */
 /*%typemap(python,in) PyObject *pyfunc {
 	if (!PyCallable_Check($source)) {
 		PyErr_SetString(PyExc_TypeError, "Need a callable object!");
@@ -1101,7 +1101,7 @@ enum x86_asm_format {
 	$target = $source;
 }*/
 
-/* python FILE * callback, per the manual */
+/* python2 FILE * callback, per the manual */
 /*
 %typemap(python,in) FILE * {
   if (!PyFile_Check($source)) {

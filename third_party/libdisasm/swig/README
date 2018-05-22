@@ -28,7 +28,7 @@ The Python Module
 
 To test that the module loads:
 
-	bash# python
+	bash# python2
 	>>> import x86disasm
 	>>> x86disasm.version_string()
 	'0.21-pre'

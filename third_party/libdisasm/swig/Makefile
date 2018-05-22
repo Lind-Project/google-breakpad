@@ -19,7 +19,7 @@ swig: swig-python swig-perl
 # swig-rub swig-tcl
 
 swig-python: 
-	cd python && make -f Makefile-swig
+	cd python2 && make -f Makefile-swig
 
 swig-ruby:
 	cd ruby && make -f Makefile-swig
@@ -35,7 +35,7 @@ install: install-python install-perl
 # install-ruby install-tcl
 
 install-python:
-	cd python && sudo make -f Makefile-swig install
+	cd python2 && sudo make -f Makefile-swig install
 
 install-ruby:
 	cd ruby && sudo make -f Makefile-swig install
@@ -51,7 +51,7 @@ uninstall: uninstall-python
 #uninstall-ruby uninstall-perl uninstall-tcl
 
 uninstall-python:
-	cd python && sudo make -f Makefile-swig uninstall
+	cd python2 && sudo make -f Makefile-swig uninstall
 
 uninstall-ruby:
 	cd ruby && sudo make -f Makefile-swig uninstall
@@ -64,7 +64,7 @@ uninstall-tcl:
 
 # ==================================================================
 clean:
-	cd python && make -f Makefile-swig clean
+	cd python2 && make -f Makefile-swig clean
 	cd ruby && make -f Makefile-swig clean
 	cd perl && make -f Makefile-swig clean
 	cd tcl && make -f Makefile-swig clean

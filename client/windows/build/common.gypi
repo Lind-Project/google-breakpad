@@ -266,7 +266,7 @@
         # This will set gcc_version to XY if you are running gcc X.Y.*.
         # This is used to tweak build flags for gcc 4.4.
         'gcc_version%': '<!(python <(DEPTH)/build/compiler_version.py)',
-        # Figure out the python architecture to decide if we build pyauto.
+        # Figure out the python2 architecture to decide if we build pyauto.
         'python_arch%': '<!(<(DEPTH)/build/linux/python_arch.sh <(sysroot)/usr/lib/libpython<(python_ver).so.1.0)',
         'conditions': [
           ['branding=="Chrome" or linux_chromium_breakpad==1', {
